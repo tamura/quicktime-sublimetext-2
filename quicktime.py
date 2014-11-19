@@ -44,26 +44,19 @@ class QuicktimeCommand(sublime_plugin.WindowCommand):
 
 
 		script_Rewind = '''
+tell application "QuickTime Player"
+	try
+		if not (exists document 1) then error
+		tell document 1
+			set rate_temp to the rate
+			set current time to current time - 8
+			play
+			set the rate to rate_temp
+		end tell
+	on error error_quit
+	end try
+end tell
 
-		steps=5
-
-		on run argv
-
-			if cmd = "rewind" then
-		      # rewind
-		      tell application "QuickTime Player"
-		      tell movie 1
-
-		      		set current time to (current time - steps)
-
-		    else if cmd = "toggle" then
-		      # playpause
-		      tell application "QuickTime Player"
-		      tell movie 1
-
-		    end if
-		  end tell
-		end run
 		'''
 
 		# args = ['2', '2']
