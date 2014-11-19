@@ -43,17 +43,17 @@ class QuicktimeCommand(sublime_plugin.WindowCommand):
 
 # if platform == "win32":
 #     import win32com.client
-#     quicktimeplayer = win32com.client.gencache.EnsureDispatch("quicktimeplayer.Application")
+#     qtp = win32com.client.gencache.EnsureDispatch("QuickTimePlayerX.Application")
 # else:
 #     from Foundation import *
 #     from ScriptingBridge import *
-#     quicktimeplayer = SBApplication.applicationWithBundleIdentifier_("com.apple.quicktimeplayer")
+#     qtp = SBApplication.applicationWithBundleIdentifier_("com.apple.QuickTimePlayerX")
 
 
 
 # class QuicktimeCommand(sublime_plugin.WindowCommand):
 # 	def run(self):
 
-		# quicktimeplayer.playpause()
+		# qtp.playpause()
 
 
