@@ -5,4 +5,4 @@ control quicktime player on OSX from sublimetext
 
 - to write out from audio files.
 - shortcut key
-- ctr+, to rewind
+- ctr+, to rewind 8 sec
